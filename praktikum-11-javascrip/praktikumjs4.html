@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function cetak_gambar() {
+    const hewan= document.getElementById("hewan");
+    const gambar= document.getElementById("gambar");
+
+    if (hewan.value == "Kucing"){
+        gambar.src = "kucing.jpg"
+        alert("gambar kucing");
+    }
+
+    if (hewan.value == "Panda"){
+        gambar.src = "panda.jpg"
+        alert("gambar panda");
+    }
+
+   if (hewan.value == "Kelinci"){
+       gambar.src = "kelinci.jpg"
+       alert("gambar kelinci");
+   } 
+
+   if (hewan.value == "Jerapah"){
+       gambar.src = "jerapah.jpg"
+       alert("gambar jerapah");
+   }
+
+   if (hewan.value == "Harimau"){
+       gambar.src = "harimau.jpg"
+       alert("gambar harimau");
+   }
+
+   if (hewan.value == "Buaya"){
+       gambar.src = "buaya.jpg"
+       alert("gambar buaya");
+   }
+
+   if (hewan.value == "Gorila"){
+       gambar.src = "gorila.jpg"
+       alert("gambar gorila");
+   }
+
+   if (hewan.value == "Logo"){
+       gambar.src = "logo nf.png"
+       alert("gambar Logo");
+   }
+}
+    </script>
+</head>
+<body>
+    <div>
+        <h3>Pilihlah Gambar yang Disukai</h3>
+        <br>
+        <br>
+        <table style="border: solid 1px;">
+        <tr>
+            <td>
+                <label form="hewan">Pilihlah Salah Satu Gambar</label><br>
+                <select id="hewan" onchange="cetak_gambar()">
+                   <option value="Kucing">Kucing</option>
+                   <option value="Panda">Panda</option>
+                   <option value="Kelinci">Kelinci</option>
+                   <option value="Jerapah">Jerapah</option>
+                   <option value="Harimau">Harimau</option>
+                   <option value="Buaya">Buaya</option>
+                   <option value="Gorila">Gorila</option>
+                   <option value="Logo">Logo</option>
+               </select>
+            </td>
+        </tr>
+        </table>
+    </div>
+    <br>
+    <br>
+       <div style="width: 100px; height: 100px; border-style: solid 1px;">
+           <img src="" id="gambar">
+       </div>
+</body>
+</html>
